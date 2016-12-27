@@ -19,16 +19,21 @@
 using namespace std;
 #define SERVER_PORT 7070
 
-string readBuffer(int nClientSocket){
-	int bufSize = 2000;
+void clientRequest(int cl){
+	int odp = 0;
+	cout<<"Enter thread"<<endl;
+	int bufSize = 1000;
     char bufor[bufSize];
     memset(&bufor, 0, bufSize);
-    int odp = read (nClientSocket, bufor, bufSize);
-    return string(bufor);
-}
-void test(int cl){
-	cout<<&cl<<endl;
-	sleep(3);
+    string message;
+	while((odp = read (cl, bufor, bufSize))>0){
+		cout<<bufor;
+		message+=bufor;
+		memset(&bufor, 0, bufSize);
+	}
+	cout<<message<<endl;
+	cout<<"End of thread"<<endl;
+	close(cl);
 }
 int main(int argc, char* argv[])
 {
@@ -52,10 +57,9 @@ int main(int argc, char* argv[])
                   argv[0], inet_ntoa((struct in_addr)stClientAddr.sin_addr));
 		//Client* cl = new Client(stClientAddr,nClientSocket);
 		//cout<<cl<<endl;
-		thread(test, nClientSocket).detach();
+		thread(clientRequest, nClientSocket).detach();
 		//th.detach();
 		cout<<"OK"<<endl;
-		close(nClientSocket);
    }
    return(0);
 }
