@@ -1,3 +1,4 @@
+#pragma once
 #include "NetworkEntity.h"
 
 class Server: public NetworkEntity{
@@ -9,6 +10,6 @@ public:
 		stAddr.sin_addr.s_addr = htonl(INADDR_ANY);
 	};
 	void listenSocket();
-	int getSocket(){return nSocket;};
+	
 
 };
