@@ -6,7 +6,7 @@
 #include <netinet/in.h>
 #include <unistd.h>
 #include <arpa/inet.h>
-
+#include <stdexcept>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -16,24 +16,38 @@
 
 #include "Server.h"
 #include "Client.h"
+#include "Constants.h"
+#include "HttpRequest.h"
 using namespace std;
-#define SERVER_PORT 7070
 
-void clientRequest(int cl){
-	int odp = 0;
-	cout<<"Enter thread"<<endl;
-	int bufSize = 1000;
-    char bufor[bufSize];
-    memset(&bufor, 0, bufSize);
-    string message;
-	while((odp = read (cl, bufor, bufSize))>0){
-		cout<<bufor;
-		message+=bufor;
-		memset(&bufor, 0, bufSize);
-	}
-	cout<<message<<endl;
-	cout<<"End of thread"<<endl;
-	close(cl);
+extern const int SERVER_PORT;
+extern const int REQUEST_BUFFER_SIZE;
+const int BUFFER_SIZE = 256;
+
+void processClientRequests(int cl){
+	try{
+		int odp = 0;
+		cout<<"Enter thread"<<endl;
+	    char bufor[BUFFER_SIZE];
+	    memset(&bufor, 0, BUFFER_SIZE);
+	    string message;
+		while((odp = read (cl, bufor, BUFFER_SIZE))>0){
+			message+=bufor;
+			if(message.size() > BUFFER_SIZE)
+				throw runtime_error(string("Request is too long."));
+			if(message.find("\r\n\r\n")!=string::npos){
+				HttpRequest req=HttpRequest(message);
+				message.clear();
+			}
+			memset(&bufor, 0, BUFFER_SIZE);
+		}
+		cout<<"End of thread"<<endl;
+		close(cl);
+	}catch(exception &e){
+		cout<<e.what()<<endl;
+		cout<<"End of thread"<<endl;
+		close(cl);
+	} 
 }
 int main(int argc, char* argv[])
 {
@@ -55,10 +69,9 @@ int main(int argc, char* argv[])
 
 		printf("%s: [connection from %s]\n",
                   argv[0], inet_ntoa((struct in_addr)stClientAddr.sin_addr));
-		//Client* cl = new Client(stClientAddr,nClientSocket);
-		//cout<<cl<<endl;
-		thread(clientRequest, nClientSocket).detach();
-		//th.detach();
+
+		thread(processClientRequests, nClientSocket).detach();
+
 		cout<<"OK"<<endl;
    }
    return(0);
