@@ -1,4 +1,4 @@
-# Install script for directory: /home/like78/Dokumenty/SerwerHTTP
+# Install script for directory: /root/Documents/SerwerHTTP
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/like78/Dokumenty/SerwerHTTP/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/Documents/SerwerHTTP/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

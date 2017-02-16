@@ -2,10 +2,6 @@
 #include <string> //class string
 
 #include <stdexcept> //exceptions
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <string.h>
-//#include <fcntl.h>
 #include <thread> //threads
 
 #include "../include/Server.h"

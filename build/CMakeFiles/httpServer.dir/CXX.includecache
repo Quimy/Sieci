@@ -28,15 +28,15 @@ string.h
 string
 -
 
-/home/like78/Dokumenty/SerwerHTTP/include/Client.h
+/root/Documents/SerwerHTTP/include/Client.h
 NetworkEntity.h
-/home/like78/Dokumenty/SerwerHTTP/include/NetworkEntity.h
+/root/Documents/SerwerHTTP/include/NetworkEntity.h
 
-/home/like78/Dokumenty/SerwerHTTP/include/Constants.h
+/root/Documents/SerwerHTTP/include/Constants.h
 string
 -
 
-/home/like78/Dokumenty/SerwerHTTP/include/HttpRequest.h
+/root/Documents/SerwerHTTP/include/HttpRequest.h
 string
 -
 stdexcept
@@ -44,7 +44,7 @@ stdexcept
 iostream
 -
 Constants.h
-/home/like78/Dokumenty/SerwerHTTP/include/Constants.h
+/root/Documents/SerwerHTTP/include/Constants.h
 vector
 -
 map
@@ -52,7 +52,7 @@ map
 string.h
 -
 HttpResponse.h
-/home/like78/Dokumenty/SerwerHTTP/include/HttpResponse.h
+/root/Documents/SerwerHTTP/include/HttpResponse.h
 stdio.h
 -
 stdlib.h
@@ -64,13 +64,13 @@ algorithm
 regex
 -
 
-/home/like78/Dokumenty/SerwerHTTP/include/HttpResponse.h
+/root/Documents/SerwerHTTP/include/HttpResponse.h
 sstream
 -
 string
 -
 
-/home/like78/Dokumenty/SerwerHTTP/include/NetworkEntity.h
+/root/Documents/SerwerHTTP/include/NetworkEntity.h
 sys/socket.h
 -
 netdb.h
@@ -88,31 +88,31 @@ string.h
 string
 -
 
-/home/like78/Dokumenty/SerwerHTTP/include/Server.h
+/root/Documents/SerwerHTTP/include/Server.h
 NetworkEntity.h
-/home/like78/Dokumenty/SerwerHTTP/include/NetworkEntity.h
+/root/Documents/SerwerHTTP/include/NetworkEntity.h
 
-/home/like78/Dokumenty/SerwerHTTP/src/Client.cpp
+/root/Documents/SerwerHTTP/src/Client.cpp
 Client.h
-/home/like78/Dokumenty/SerwerHTTP/src/Client.h
+/root/Documents/SerwerHTTP/src/Client.h
 
-/home/like78/Dokumenty/SerwerHTTP/src/HttpRequest.cpp
+/root/Documents/SerwerHTTP/src/HttpRequest.cpp
 ../include/HttpRequest.h
-/home/like78/Dokumenty/SerwerHTTP/include/HttpRequest.h
+/root/Documents/SerwerHTTP/include/HttpRequest.h
 
-/home/like78/Dokumenty/SerwerHTTP/src/HttpResponse.cpp
+/root/Documents/SerwerHTTP/src/HttpResponse.cpp
 ../include/HttpResponse.h
-/home/like78/Dokumenty/SerwerHTTP/include/HttpResponse.h
+/root/Documents/SerwerHTTP/include/HttpResponse.h
 
-/home/like78/Dokumenty/SerwerHTTP/src/NetworkEntity.cpp
+/root/Documents/SerwerHTTP/src/NetworkEntity.cpp
 ../include/NetworkEntity.h
-/home/like78/Dokumenty/SerwerHTTP/include/NetworkEntity.h
+/root/Documents/SerwerHTTP/include/NetworkEntity.h
 
-/home/like78/Dokumenty/SerwerHTTP/src/Server.cpp
+/root/Documents/SerwerHTTP/src/Server.cpp
 ../include/Server.h
-/home/like78/Dokumenty/SerwerHTTP/include/Server.h
+/root/Documents/SerwerHTTP/include/Server.h
 
-/home/like78/Dokumenty/SerwerHTTP/src/main.cpp
+/root/Documents/SerwerHTTP/src/main.cpp
 iostream
 -
 string
@@ -122,11 +122,11 @@ stdexcept
 thread
 -
 ../include/Server.h
-/home/like78/Dokumenty/SerwerHTTP/include/Server.h
+/root/Documents/SerwerHTTP/include/Server.h
 ../include/Client.h
-/home/like78/Dokumenty/SerwerHTTP/include/Client.h
+/root/Documents/SerwerHTTP/include/Client.h
 ../include/Constants.h
-/home/like78/Dokumenty/SerwerHTTP/include/Constants.h
+/root/Documents/SerwerHTTP/include/Constants.h
 ../include/HttpRequest.h
-/home/like78/Dokumenty/SerwerHTTP/include/HttpRequest.h
+/root/Documents/SerwerHTTP/include/HttpRequest.h
 

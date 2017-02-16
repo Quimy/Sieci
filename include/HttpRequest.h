@@ -31,6 +31,7 @@ class HttpRequest{
 	void parseFirstLine(string&);
 	void parseSecondLine(string&);
 	void parseRemainingLines(vector<string>);
+	void parseHeader(string& s);
 public:
 	HttpRequest(string req);
 	string getResponseMessage();

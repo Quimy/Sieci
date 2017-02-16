@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/httpServers.dir/src/main.cpp.o CMakeFiles/httpServers.dir/src/HttpResponse.cpp.o CMakeFiles/httpServers.dir/src/Server.cpp.o CMakeFiles/httpServers.dir/src/HttpRequest.cpp.o CMakeFiles/httpServers.dir/src/NetworkEntity.cpp.o CMakeFiles/httpServers.dir/src/Client.cpp.o  -o httpServers 

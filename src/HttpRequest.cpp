@@ -43,7 +43,7 @@ HttpRequest::HttpRequest(string req):acceptedMethods{"GET"}{
 }
 
 void HttpRequest::parseFirstLine(string& s){
-	ostringstream ss(s);
+	istringstream ss(s);
 	string http,cEof;
 
 	ss >> method >> uri >> http;
@@ -51,8 +51,7 @@ void HttpRequest::parseFirstLine(string& s){
 	if(find(acceptedMethods.begin(),acceptedMethods.end(), method) != acceptedMethods.end())
 		throw runtime_error(string("Method name is not valid"));
 
-	//if((string("HTTP/").compare(0,5,http) != 0) || http[6]!='.' || !isdigit(http[5]) || !isdigit(http[7]) || !(ss>>cEof))
-	if(!regex_match(http, std::regex("HTTP/[0-9].[0-9]") || !(ss>>cEof)))
+	if(!regex_match(http, std::regex("HTTP/[0-9].[0-9]")) || !(ss>>cEof))
 		throw runtime_error(string("First line is not valid"));
 
 	major = http[5];
@@ -70,7 +69,7 @@ void HttpRequest::parseRemainingLines(vector<string> vs){
 	if(vs.size() == 0)
 		return;
 
-	for_each(vs.begin(),vs.end(),parseHeader);
+	for_each(vs.begin(),vs.end(),std::bind(&HttpRequest::parseHeader, this, std::placeholders::_1));
 
 }
 string HttpRequest::getResponseMessage(){

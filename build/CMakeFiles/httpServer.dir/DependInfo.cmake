@@ -4,12 +4,12 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/like78/Dokumenty/SerwerHTTP/src/Client.cpp" "/home/like78/Dokumenty/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/Client.cpp.o"
-  "/home/like78/Dokumenty/SerwerHTTP/src/HttpRequest.cpp" "/home/like78/Dokumenty/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o"
-  "/home/like78/Dokumenty/SerwerHTTP/src/HttpResponse.cpp" "/home/like78/Dokumenty/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o"
-  "/home/like78/Dokumenty/SerwerHTTP/src/NetworkEntity.cpp" "/home/like78/Dokumenty/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o"
-  "/home/like78/Dokumenty/SerwerHTTP/src/Server.cpp" "/home/like78/Dokumenty/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/Server.cpp.o"
-  "/home/like78/Dokumenty/SerwerHTTP/src/main.cpp" "/home/like78/Dokumenty/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/main.cpp.o"
+  "/root/Documents/SerwerHTTP/src/Client.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/Client.cpp.o"
+  "/root/Documents/SerwerHTTP/src/HttpRequest.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o"
+  "/root/Documents/SerwerHTTP/src/HttpResponse.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o"
+  "/root/Documents/SerwerHTTP/src/NetworkEntity.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o"
+  "/root/Documents/SerwerHTTP/src/Server.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/Server.cpp.o"
+  "/root/Documents/SerwerHTTP/src/main.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
