@@ -1,0 +1,3 @@
+/home/like78/Dokumenty/SerwerHTTP/build/CMakeFiles/edit_cache.dir
+/home/like78/Dokumenty/SerwerHTTP/build/CMakeFiles/rebuild_cache.dir
+/home/like78/Dokumenty/SerwerHTTP/build/CMakeFiles/httpServer.dir

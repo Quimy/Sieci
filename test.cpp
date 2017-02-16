@@ -2,30 +2,23 @@
 #include <iostream>
 #include <vector>
 #include <sys/stat.h>
+#include <sstream>
 using namespace std;
 
-vector<string> split(string text,string separator){
-	vector<string> result;
-	size_t x {0};
-	for (auto i {text.find(separator)}; i != string::npos; i=text.find(separator,x)){
-		string tmp{text.substr(x,i-x)};
-		x = i+separator.size();
-		if(tmp.size() == 0) continue;
-		result.push_back(tmp);
-	}
-	if(x != text.size()){
-		string tmp = text.substr(x,string::npos);
-		if(tmp.size()!=0)
-			result.push_back(tmp);
-	}
-	return result;
-}
+inline bool exists_test3 (const std::string& name) {
+  struct stat buffer;
+  int a = stat (name.c_str(), &buffer);
+  cout<< S_ISDIR(buffer.st_mode)<<"|"<<buffer.st_size<<"|"<<a<<endl;
+  perror(NULL);
+  return (a==0); 
+}	
+
 int main(int argc, char const *argv[])
-{
-	string a{"abdhhefghhabchhhhhhhh"};
-	vector<string> result{split(a,"hh")};
-	for(auto x: result){
-		cout<<x<<endl;
-	}
+{	//int a = exists_test3("serverRoot/heldsd.txt");
+//cout<<endl<<a;
+	if(exists_test3("serverRoot"))
+		cout<<"Istnieje taki plik"<<endl;
+
+
 	return 0;
 }

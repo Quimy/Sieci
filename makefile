@@ -3,7 +3,7 @@ CC=g++
 
 CFLAGS=-c -Wall -std=c++14
 
-NAMES=NetworkEntity Server Client HttpRequest
+NAMES=NetworkEntity Server Client HttpRequest HttpResponse
 
 all: http
 
@@ -23,6 +23,8 @@ Client.o: Client.cpp Client.h NetworkEntity.o
 	$(CC) $(CFLAGS) Client.cpp
 HttpRequest.o: HttpRequest.h HttpRequest.cpp Constants.h 
 	$(CC) $(CFLAGS) HttpRequest.cpp
+HttpResponse.o: HttpResponse.h HttpResponse.cpp Constants.h 
+	$(CC) $(CFLAGS) HttpResponse.cpp
 clean:
 	rm *o http
 
