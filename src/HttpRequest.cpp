@@ -21,7 +21,7 @@ vector<string> split(string text,string separator){
 	return result;
 }
 
-HttpRequest::HttpRequest(string req):acceptedMethods{"GET"}{
+HttpRequest::HttpRequest(string req){
 	cout<< "Message size: "<<req.size()<<endl;
 	if(req.size() > REQUEST_BUFFER_SIZE || req.size() < 2)
 		throw runtime_error(string("Request too long"));
@@ -44,14 +44,10 @@ HttpRequest::HttpRequest(string req):acceptedMethods{"GET"}{
 
 void HttpRequest::parseFirstLine(string& s){
 	istringstream ss(s);
-	string http,cEof;
+	string http;
 
-	ss >> method >> uri >> http;
-
-	if(find(acceptedMethods.begin(),acceptedMethods.end(), method) != acceptedMethods.end())
-		throw runtime_error(string("Method name is not valid"));
-
-	if(!regex_match(http, std::regex("HTTP/[0-9].[0-9]")) || !(ss>>cEof))
+	ss >> methodName >> uri >> http;
+	if(!regex_match(http, std::regex("HTTP/[0-9].[0-9]")))
 		throw runtime_error(string("First line is not valid"));
 
 	major = http[5];
@@ -72,6 +68,17 @@ void HttpRequest::parseRemainingLines(vector<string> vs){
 	for_each(vs.begin(),vs.end(),std::bind(&HttpRequest::parseHeader, this, std::placeholders::_1));
 
 }
+string HttpRequest::interpretHeaders(){
+	map<string,string>::iterator i = extraHeaders.find("If-Modified-Since");
+	if (i != extraHeaders.end()) {
+		string a {modifiedSinceHeader(uri,i->second)};
+	}
+	return "";
+}
 string HttpRequest::getResponseMessage(){
-	return HttpResponse(200,"OK").getResponseMessage();
+	string ret{interpretHeaders()};
+	MethodFactory fac = MethodFactory();
+	MethodInterface *method = fac.getMethod(methodName);
+	string tmp = method->getResponse(uri);
+	return tmp+"\r\n\r\n";
 }

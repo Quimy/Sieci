@@ -5,13 +5,31 @@ CMakeFiles/httpServer.dir/src/Client.cpp.o: ../include/Client.h
 CMakeFiles/httpServer.dir/src/Client.cpp.o: ../include/NetworkEntity.h
 CMakeFiles/httpServer.dir/src/Client.cpp.o: ../src/Client.cpp
 
+CMakeFiles/httpServer.dir/src/HeaderInterpreters.cpp.o: ../include/HeaderInterpreters.h
+CMakeFiles/httpServer.dir/src/HeaderInterpreters.cpp.o: ../src/HeaderInterpreters.cpp
+
 CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o: ../include/Constants.h
+CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o: ../include/HeaderInterpreters.h
 CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o: ../include/HttpRequest.h
 CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o: ../include/HttpResponse.h
+CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o: ../include/MethodFactory.h
+CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o: ../include/MethodGET.h
+CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o: ../include/MethodInterface.h
 CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o: ../src/HttpRequest.cpp
 
 CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o: ../include/HttpResponse.h
 CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o: ../src/HttpResponse.cpp
+
+CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o: ../include/Constants.h
+CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o: ../include/MethodFactory.h
+CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o: ../include/MethodGET.h
+CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o: ../include/MethodInterface.h
+CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o: ../src/MethodFactory.cpp
+
+CMakeFiles/httpServer.dir/src/MethodGET.cpp.o: ../include/Constants.h
+CMakeFiles/httpServer.dir/src/MethodGET.cpp.o: ../include/MethodGET.h
+CMakeFiles/httpServer.dir/src/MethodGET.cpp.o: ../include/MethodInterface.h
+CMakeFiles/httpServer.dir/src/MethodGET.cpp.o: ../src/MethodGET.cpp
 
 CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o: ../include/NetworkEntity.h
 CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o: ../src/NetworkEntity.cpp
@@ -22,8 +40,12 @@ CMakeFiles/httpServer.dir/src/Server.cpp.o: ../src/Server.cpp
 
 CMakeFiles/httpServer.dir/src/main.cpp.o: ../include/Client.h
 CMakeFiles/httpServer.dir/src/main.cpp.o: ../include/Constants.h
+CMakeFiles/httpServer.dir/src/main.cpp.o: ../include/HeaderInterpreters.h
 CMakeFiles/httpServer.dir/src/main.cpp.o: ../include/HttpRequest.h
 CMakeFiles/httpServer.dir/src/main.cpp.o: ../include/HttpResponse.h
+CMakeFiles/httpServer.dir/src/main.cpp.o: ../include/MethodFactory.h
+CMakeFiles/httpServer.dir/src/main.cpp.o: ../include/MethodGET.h
+CMakeFiles/httpServer.dir/src/main.cpp.o: ../include/MethodInterface.h
 CMakeFiles/httpServer.dir/src/main.cpp.o: ../include/NetworkEntity.h
 CMakeFiles/httpServer.dir/src/main.cpp.o: ../include/Server.h
 CMakeFiles/httpServer.dir/src/main.cpp.o: ../src/main.cpp

@@ -1,3 +1,4 @@
+#pragma once
 #include <string>
 #include <stdexcept>
 #include <iostream>
@@ -12,26 +13,30 @@
 #include <sstream>
 #include <algorithm>
 #include <regex>
+#include <ctime>
+#include <iomanip>
+#include <sys/stat.h> //mode_t
 
+#include "MethodFactory.h"
+#include "HeaderInterpreters.h"
 using namespace std;
 
 vector<string> split(string text,string separator);
 
-enum class Method{GET};
 class HttpRequest{
 	
-	string method;
+	string methodName;
 	string uri;
 	char major;
 	char minor;
 	map<string,string> extraHeaders;
-
-	vector<string> acceptedMethods;
+	struct stat fileStats;
 
 	void parseFirstLine(string&);
 	void parseSecondLine(string&);
 	void parseRemainingLines(vector<string>);
 	void parseHeader(string& s);
+	string interpretHeaders();
 public:
 	HttpRequest(string req);
 	string getResponseMessage();

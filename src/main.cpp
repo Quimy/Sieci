@@ -30,7 +30,9 @@ void processClientRequests(int clientSocket){
 			if(message.find("\r\n\r\n")!=string::npos){
 				HttpRequest req = HttpRequest(message);
 				string tmp = req.getResponseMessage();
+				cout<<tmp<<endl;
 				write(clientSocket,&tmp[0], tmp.size());
+				cout<<"Wiasomość wysłano."<<endl;
 				message.clear();
 			}
 			memset(&bufor, 0, BUFFER_SIZE);

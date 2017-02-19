@@ -1,6 +1,8 @@
+#pragma once
 #include "MethodGET.h"
 #include <string>
 
 class MethodFactory{
-	MethodInterface getMethod(string meth);
-}
+public:
+	MethodInterface* getMethod(string meth);
+};

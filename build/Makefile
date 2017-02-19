@@ -150,6 +150,33 @@ src/Client.cpp.s:
 	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/Client.cpp.s
 .PHONY : src/Client.cpp.s
 
+src/HeaderInterpreters.o: src/HeaderInterpreters.cpp.o
+
+.PHONY : src/HeaderInterpreters.o
+
+# target to build an object file
+src/HeaderInterpreters.cpp.o:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/HeaderInterpreters.cpp.o
+.PHONY : src/HeaderInterpreters.cpp.o
+
+src/HeaderInterpreters.i: src/HeaderInterpreters.cpp.i
+
+.PHONY : src/HeaderInterpreters.i
+
+# target to preprocess a source file
+src/HeaderInterpreters.cpp.i:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/HeaderInterpreters.cpp.i
+.PHONY : src/HeaderInterpreters.cpp.i
+
+src/HeaderInterpreters.s: src/HeaderInterpreters.cpp.s
+
+.PHONY : src/HeaderInterpreters.s
+
+# target to generate assembly for a file
+src/HeaderInterpreters.cpp.s:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/HeaderInterpreters.cpp.s
+.PHONY : src/HeaderInterpreters.cpp.s
+
 src/HttpRequest.o: src/HttpRequest.cpp.o
 
 .PHONY : src/HttpRequest.o
@@ -203,6 +230,60 @@ src/HttpResponse.s: src/HttpResponse.cpp.s
 src/HttpResponse.cpp.s:
 	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/HttpResponse.cpp.s
 .PHONY : src/HttpResponse.cpp.s
+
+src/MethodFactory.o: src/MethodFactory.cpp.o
+
+.PHONY : src/MethodFactory.o
+
+# target to build an object file
+src/MethodFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o
+.PHONY : src/MethodFactory.cpp.o
+
+src/MethodFactory.i: src/MethodFactory.cpp.i
+
+.PHONY : src/MethodFactory.i
+
+# target to preprocess a source file
+src/MethodFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/MethodFactory.cpp.i
+.PHONY : src/MethodFactory.cpp.i
+
+src/MethodFactory.s: src/MethodFactory.cpp.s
+
+.PHONY : src/MethodFactory.s
+
+# target to generate assembly for a file
+src/MethodFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/MethodFactory.cpp.s
+.PHONY : src/MethodFactory.cpp.s
+
+src/MethodGET.o: src/MethodGET.cpp.o
+
+.PHONY : src/MethodGET.o
+
+# target to build an object file
+src/MethodGET.cpp.o:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/MethodGET.cpp.o
+.PHONY : src/MethodGET.cpp.o
+
+src/MethodGET.i: src/MethodGET.cpp.i
+
+.PHONY : src/MethodGET.i
+
+# target to preprocess a source file
+src/MethodGET.cpp.i:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/MethodGET.cpp.i
+.PHONY : src/MethodGET.cpp.i
+
+src/MethodGET.s: src/MethodGET.cpp.s
+
+.PHONY : src/MethodGET.s
+
+# target to generate assembly for a file
+src/MethodGET.cpp.s:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/MethodGET.cpp.s
+.PHONY : src/MethodGET.cpp.s
 
 src/NetworkEntity.o: src/NetworkEntity.cpp.o
 
@@ -297,12 +378,21 @@ help:
 	@echo "... src/Client.o"
 	@echo "... src/Client.i"
 	@echo "... src/Client.s"
+	@echo "... src/HeaderInterpreters.o"
+	@echo "... src/HeaderInterpreters.i"
+	@echo "... src/HeaderInterpreters.s"
 	@echo "... src/HttpRequest.o"
 	@echo "... src/HttpRequest.i"
 	@echo "... src/HttpRequest.s"
 	@echo "... src/HttpResponse.o"
 	@echo "... src/HttpResponse.i"
 	@echo "... src/HttpResponse.s"
+	@echo "... src/MethodFactory.o"
+	@echo "... src/MethodFactory.i"
+	@echo "... src/MethodFactory.s"
+	@echo "... src/MethodGET.o"
+	@echo "... src/MethodGET.i"
+	@echo "... src/MethodGET.s"
 	@echo "... src/NetworkEntity.o"
 	@echo "... src/NetworkEntity.i"
 	@echo "... src/NetworkEntity.s"
