@@ -13,44 +13,28 @@ using namespace std;
 
 extern const int SERVER_PORT;
 extern const int REQUEST_BUFFER_SIZE;
-const int BUFFER_SIZE = 256;
 
 void processClientRequests(int clientSocket){
 	try{
-		int odp = 0;
 
 		cout<<"Enter thread"<<endl;
-	    char bufor[BUFFER_SIZE];
-	    memset(&bufor, 0, BUFFER_SIZE);
-	    string message;
-		while((odp = read (clientSocket, bufor, BUFFER_SIZE))>0){
-			message+=bufor;
-			if(message.size() > REQUEST_BUFFER_SIZE)
-				throw runtime_error(string("Request is too long."));
-			if(message.find("\r\n\r\n")!=string::npos){
-				HttpRequest req = HttpRequest(message);
+	    char bufor[REQUEST_BUFFER_SIZE];
+	    memset(&bufor, 0, REQUEST_BUFFER_SIZE);
 
-				if(req.isEntityBody()){
-					char* body = new char[req.getBodyLength()];
-					read(clientSocket, body, req.getBodyLength());
-					req.setBody(body);
-					delete[] body;
-				}
-				string tmp = req.getResponseMessage();
-				cout<<tmp<<endl;
-				write(clientSocket,&tmp[0], tmp.size());
-				cout<<"Wiasomość wysłano."<<endl;
-				message.clear();
-			}
-			memset(&bufor, 0, BUFFER_SIZE);
-		}
-		cout<<"End of thread"<<endl;
-		close(clientSocket);
-	}catch(exception &e){
-		cout<<e.what()<<endl;
-		cout<<"End of thread"<<endl;
-		close(clientSocket);
+		read(clientSocket, bufor, REQUEST_BUFFER_SIZE);
+		cout<<bufor<<endl;
+		HttpRequest req = HttpRequest(string{bufor});
+
+		string response = req.getResponseMessage();
+		cout<<response <<endl;
+		write(clientSocket,&response[0], response.size());
+
+	}
+	catch(exception &e){
+		cout<<e.what()<<endl;		
 	} 
+	cout<<"End of thread"<<endl;
+	close(clientSocket);
 }
 int main(int argc, char* argv[])
 {

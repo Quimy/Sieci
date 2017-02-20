@@ -1,0 +1,2 @@
+GET /nofile.txt HTTP/1.0
+

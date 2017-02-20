@@ -17,6 +17,9 @@
 #include <iomanip>
 #include <sys/stat.h> //mode_t
 
+#include <iomanip>
+#include <ctime>
+
 #include "MethodFactory.h"
 #include "HeaderInterpreters.h"
 #include "SendMessageException.h"
@@ -32,8 +35,8 @@ class HttpRequest{
 	char minor;
 	map<string,string> extraHeaders;
 	struct stat fileStats;
-	int bodyLength;
 	string body;
+	bool error;
 
 	void parseFirstLine(string&);
 	void parseSecondLine(string&);
@@ -44,9 +47,7 @@ class HttpRequest{
 public:
 	HttpRequest(string req);
 	string getResponseMessage();
-	bool isEntityBody();
-	int getBodyLength(){return bodyLength;};
-	void setBody(char* b){body = b;};
+	int isBody();
 	
 
 };
