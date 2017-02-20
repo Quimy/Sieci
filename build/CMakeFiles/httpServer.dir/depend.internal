@@ -7,6 +7,7 @@ CMakeFiles/httpServer.dir/src/Client.cpp.o
  /root/Documents/SerwerHTTP/src/Client.cpp
 CMakeFiles/httpServer.dir/src/HeaderInterpreters.cpp.o
  /root/Documents/SerwerHTTP/include/HeaderInterpreters.h
+ /root/Documents/SerwerHTTP/include/SendMessageException.h
  /root/Documents/SerwerHTTP/src/HeaderInterpreters.cpp
 CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o
  /root/Documents/SerwerHTTP/include/Constants.h
@@ -15,7 +16,10 @@ CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o
  /root/Documents/SerwerHTTP/include/HttpResponse.h
  /root/Documents/SerwerHTTP/include/MethodFactory.h
  /root/Documents/SerwerHTTP/include/MethodGET.h
+ /root/Documents/SerwerHTTP/include/MethodHEAD.h
  /root/Documents/SerwerHTTP/include/MethodInterface.h
+ /root/Documents/SerwerHTTP/include/MethodPOST.h
+ /root/Documents/SerwerHTTP/include/SendMessageException.h
  /root/Documents/SerwerHTTP/src/HttpRequest.cpp
 CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o
  /root/Documents/SerwerHTTP/include/HttpResponse.h
@@ -24,16 +28,30 @@ CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o
  /root/Documents/SerwerHTTP/include/Constants.h
  /root/Documents/SerwerHTTP/include/MethodFactory.h
  /root/Documents/SerwerHTTP/include/MethodGET.h
+ /root/Documents/SerwerHTTP/include/MethodHEAD.h
  /root/Documents/SerwerHTTP/include/MethodInterface.h
+ /root/Documents/SerwerHTTP/include/MethodPOST.h
  /root/Documents/SerwerHTTP/src/MethodFactory.cpp
 CMakeFiles/httpServer.dir/src/MethodGET.cpp.o
  /root/Documents/SerwerHTTP/include/Constants.h
  /root/Documents/SerwerHTTP/include/MethodGET.h
  /root/Documents/SerwerHTTP/include/MethodInterface.h
  /root/Documents/SerwerHTTP/src/MethodGET.cpp
+CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.o
+ /root/Documents/SerwerHTTP/include/Constants.h
+ /root/Documents/SerwerHTTP/include/MethodHEAD.h
+ /root/Documents/SerwerHTTP/include/MethodInterface.h
+ /root/Documents/SerwerHTTP/src/MethodHEAD.cpp
+CMakeFiles/httpServer.dir/src/MethodPOST.cpp.o
+ /root/Documents/SerwerHTTP/include/Constants.h
+ /root/Documents/SerwerHTTP/include/MethodInterface.h
+ /root/Documents/SerwerHTTP/include/MethodPOST.h
+ /root/Documents/SerwerHTTP/src/MethodPOST.cpp
 CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o
  /root/Documents/SerwerHTTP/include/NetworkEntity.h
  /root/Documents/SerwerHTTP/src/NetworkEntity.cpp
+CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o
+ /root/Documents/SerwerHTTP/src/SendMessageException.cpp
 CMakeFiles/httpServer.dir/src/Server.cpp.o
  /root/Documents/SerwerHTTP/include/NetworkEntity.h
  /root/Documents/SerwerHTTP/include/Server.h
@@ -46,7 +64,10 @@ CMakeFiles/httpServer.dir/src/main.cpp.o
  /root/Documents/SerwerHTTP/include/HttpResponse.h
  /root/Documents/SerwerHTTP/include/MethodFactory.h
  /root/Documents/SerwerHTTP/include/MethodGET.h
+ /root/Documents/SerwerHTTP/include/MethodHEAD.h
  /root/Documents/SerwerHTTP/include/MethodInterface.h
+ /root/Documents/SerwerHTTP/include/MethodPOST.h
  /root/Documents/SerwerHTTP/include/NetworkEntity.h
+ /root/Documents/SerwerHTTP/include/SendMessageException.h
  /root/Documents/SerwerHTTP/include/Server.h
  /root/Documents/SerwerHTTP/src/main.cpp

@@ -19,6 +19,7 @@
 
 #include "MethodFactory.h"
 #include "HeaderInterpreters.h"
+#include "SendMessageException.h"
 using namespace std;
 
 vector<string> split(string text,string separator);
@@ -37,6 +38,7 @@ class HttpRequest{
 	void parseRemainingLines(vector<string>);
 	void parseHeader(string& s);
 	string interpretHeaders();
+	string generateHeaders();
 public:
 	HttpRequest(string req);
 	string getResponseMessage();

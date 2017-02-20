@@ -8,7 +8,12 @@
 
 #include <sys/stat.h> //mode_t
 
+#include "SendMessageException.h"
+
 using namespace std;
 
 
-string modifiedSinceHeader(string url,string header);
+string modifiedSinceHeader(const time_t mTime,const string header);
+void userAgentHeader(const string ua);
+void refererHeader(const string ua);
+void fromHeader(const string ua);

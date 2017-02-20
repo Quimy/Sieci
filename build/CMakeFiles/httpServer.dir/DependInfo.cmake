@@ -10,7 +10,10 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/root/Documents/SerwerHTTP/src/HttpResponse.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o"
   "/root/Documents/SerwerHTTP/src/MethodFactory.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o"
   "/root/Documents/SerwerHTTP/src/MethodGET.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/MethodGET.cpp.o"
+  "/root/Documents/SerwerHTTP/src/MethodHEAD.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.o"
+  "/root/Documents/SerwerHTTP/src/MethodPOST.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/MethodPOST.cpp.o"
   "/root/Documents/SerwerHTTP/src/NetworkEntity.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o"
+  "/root/Documents/SerwerHTTP/src/SendMessageException.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o"
   "/root/Documents/SerwerHTTP/src/Server.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/Server.cpp.o"
   "/root/Documents/SerwerHTTP/src/main.cpp" "/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir/src/main.cpp.o"
   )

@@ -285,6 +285,60 @@ src/MethodGET.cpp.s:
 	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/MethodGET.cpp.s
 .PHONY : src/MethodGET.cpp.s
 
+src/MethodHEAD.o: src/MethodHEAD.cpp.o
+
+.PHONY : src/MethodHEAD.o
+
+# target to build an object file
+src/MethodHEAD.cpp.o:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.o
+.PHONY : src/MethodHEAD.cpp.o
+
+src/MethodHEAD.i: src/MethodHEAD.cpp.i
+
+.PHONY : src/MethodHEAD.i
+
+# target to preprocess a source file
+src/MethodHEAD.cpp.i:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.i
+.PHONY : src/MethodHEAD.cpp.i
+
+src/MethodHEAD.s: src/MethodHEAD.cpp.s
+
+.PHONY : src/MethodHEAD.s
+
+# target to generate assembly for a file
+src/MethodHEAD.cpp.s:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.s
+.PHONY : src/MethodHEAD.cpp.s
+
+src/MethodPOST.o: src/MethodPOST.cpp.o
+
+.PHONY : src/MethodPOST.o
+
+# target to build an object file
+src/MethodPOST.cpp.o:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/MethodPOST.cpp.o
+.PHONY : src/MethodPOST.cpp.o
+
+src/MethodPOST.i: src/MethodPOST.cpp.i
+
+.PHONY : src/MethodPOST.i
+
+# target to preprocess a source file
+src/MethodPOST.cpp.i:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/MethodPOST.cpp.i
+.PHONY : src/MethodPOST.cpp.i
+
+src/MethodPOST.s: src/MethodPOST.cpp.s
+
+.PHONY : src/MethodPOST.s
+
+# target to generate assembly for a file
+src/MethodPOST.cpp.s:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/MethodPOST.cpp.s
+.PHONY : src/MethodPOST.cpp.s
+
 src/NetworkEntity.o: src/NetworkEntity.cpp.o
 
 .PHONY : src/NetworkEntity.o
@@ -311,6 +365,33 @@ src/NetworkEntity.s: src/NetworkEntity.cpp.s
 src/NetworkEntity.cpp.s:
 	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.s
 .PHONY : src/NetworkEntity.cpp.s
+
+src/SendMessageException.o: src/SendMessageException.cpp.o
+
+.PHONY : src/SendMessageException.o
+
+# target to build an object file
+src/SendMessageException.cpp.o:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o
+.PHONY : src/SendMessageException.cpp.o
+
+src/SendMessageException.i: src/SendMessageException.cpp.i
+
+.PHONY : src/SendMessageException.i
+
+# target to preprocess a source file
+src/SendMessageException.cpp.i:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/SendMessageException.cpp.i
+.PHONY : src/SendMessageException.cpp.i
+
+src/SendMessageException.s: src/SendMessageException.cpp.s
+
+.PHONY : src/SendMessageException.s
+
+# target to generate assembly for a file
+src/SendMessageException.cpp.s:
+	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/SendMessageException.cpp.s
+.PHONY : src/SendMessageException.cpp.s
 
 src/Server.o: src/Server.cpp.o
 
@@ -393,9 +474,18 @@ help:
 	@echo "... src/MethodGET.o"
 	@echo "... src/MethodGET.i"
 	@echo "... src/MethodGET.s"
+	@echo "... src/MethodHEAD.o"
+	@echo "... src/MethodHEAD.i"
+	@echo "... src/MethodHEAD.s"
+	@echo "... src/MethodPOST.o"
+	@echo "... src/MethodPOST.i"
+	@echo "... src/MethodPOST.s"
 	@echo "... src/NetworkEntity.o"
 	@echo "... src/NetworkEntity.i"
 	@echo "... src/NetworkEntity.s"
+	@echo "... src/SendMessageException.o"
+	@echo "... src/SendMessageException.i"
+	@echo "... src/SendMessageException.s"
 	@echo "... src/Server.o"
 	@echo "... src/Server.i"
 	@echo "... src/Server.s"

@@ -1,6 +1,6 @@
 #include "../include/HeaderInterpreters.h"
 
-string modifiedSinceHeader(string url,string header){
+string modifiedSinceHeader(const time_t mTime,const string header){
 		cout<<"Interpretacja nagłówka "<<header<<endl;
 
 		std::istringstream date_s(header);
@@ -12,7 +12,29 @@ string modifiedSinceHeader(string url,string header){
     	} else {
         	std::cout << std::put_time(&date_c, "%c") << '\n';
     	}
-    	time_t t = time(0);
-    	cout<< seconds <<"|"<<t<<endl;
-	return "";
+
+    	cout<< seconds <<"|"<<mTime<<endl;
+    	if(mTime <= seconds)
+    		return "304 Not Modified";
+    	else
+    		return "";
 }
+void userAgentHeader(const string ua){
+	cout<<"-----------------------------"<<endl;
+	cout<<"User-Agent zawiera: "<< ua<<endl;
+	cout<<"Używany do celów statystycznych i automatycznego rozpoznawania"<<endl;
+	cout<<"-----------------------------"<<endl;
+}
+void refererHeader(const string ua){
+	cout<<"-----------------------------"<<endl;
+	cout<<"Referer zawiera: "<< ua<<endl;
+	cout<<"Używany do generacji listy powrotnych linków."<<endl;
+	cout<<"-----------------------------"<<endl;
+}
+void fromHeader(const string ua){
+	cout<<"-----------------------------"<<endl;
+	cout<<"From zawiera: "<< ua<<endl;
+	cout<<"Zawiera email klienta."<<endl;
+	cout<<"-----------------------------"<<endl;
+}
+

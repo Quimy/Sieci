@@ -1,9 +1,10 @@
 #include "../include/MethodGET.h"
 
 extern const std::string SERVER_ROOT;
-string MethodGET::getResponse(string url){
+string MethodGET::getResponse(string url,bool isDir){
 
-	if(S_ISDIR(fileStats.st_mode)){
+	string filePath(SERVER_ROOT+url);
+	if(isDir){
 		//jest katalogiem, wypisz pliki
 	}
 	else{
