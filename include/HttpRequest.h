@@ -32,6 +32,8 @@ class HttpRequest{
 	char minor;
 	map<string,string> extraHeaders;
 	struct stat fileStats;
+	int bodyLength;
+	string body;
 
 	void parseFirstLine(string&);
 	void parseSecondLine(string&);
@@ -42,6 +44,9 @@ class HttpRequest{
 public:
 	HttpRequest(string req);
 	string getResponseMessage();
+	bool isEntityBody();
+	int getBodyLength(){return bodyLength;};
+	void setBody(char* b){body = b;};
 	
 
 };

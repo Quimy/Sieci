@@ -29,6 +29,13 @@ void processClientRequests(int clientSocket){
 				throw runtime_error(string("Request is too long."));
 			if(message.find("\r\n\r\n")!=string::npos){
 				HttpRequest req = HttpRequest(message);
+
+				if(req.isEntityBody()){
+					char* body = new char[req.getBodyLength()];
+					read(clientSocket, body, req.getBodyLength());
+					req.setBody(body);
+					delete[] body;
+				}
 				string tmp = req.getResponseMessage();
 				cout<<tmp<<endl;
 				write(clientSocket,&tmp[0], tmp.size());

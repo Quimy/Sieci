@@ -22,21 +22,20 @@ vector<string> split(string text,string separator){
 }
 
 HttpRequest::HttpRequest(string req){
-	cout<< "Message size: "<<req.size()<<endl;
+
 	if(req.size() > REQUEST_BUFFER_SIZE || req.size() < 2)
 		throw runtime_error(string("Request too long"));
 
-	cout<<req;
 	vector<string> splitted_msg = split(req,"\r\n");
 	cout<<"Number of rows: "<<splitted_msg.size()<<endl;
 	if(splitted_msg.size()<1)
 		throw runtime_error(string("Request wrong format."));
 
 	parseFirstLine(splitted_msg[0]);
-	cout<<minor<<major<<endl;
 
 	parseRemainingLines(vector<string>(splitted_msg.begin()+1,splitted_msg.end()));
 
+	bodyLength = 0;
 	for(auto x: extraHeaders){
 		cout<<x.first<<"=>"<<x.second<<endl;
 	}
@@ -93,6 +92,21 @@ string HttpRequest::generateHeaders(){
 	ret+="Location: localhost"+uri+"\r\n";
 	ret+="Server: None\r\n";
 	return ret;
+}
+bool isEntityBody(){
+	map<string,string>::iterator i = extraHeaders.find("Content-Length");
+	if (i != extraHeaders.end()) {
+		bodyLength = atoi(i->second);
+		if(bodyLength<=0){
+			return false;
+		}
+		else{
+			return true;
+		}
+	}
+	else{
+		return false;
+	}
 }
 string HttpRequest::getResponseMessage(){
 	string status_line,body,headers;
