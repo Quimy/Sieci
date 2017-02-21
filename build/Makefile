@@ -204,33 +204,6 @@ src/HttpRequest.cpp.s:
 	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/HttpRequest.cpp.s
 .PHONY : src/HttpRequest.cpp.s
 
-src/HttpResponse.o: src/HttpResponse.cpp.o
-
-.PHONY : src/HttpResponse.o
-
-# target to build an object file
-src/HttpResponse.cpp.o:
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o
-.PHONY : src/HttpResponse.cpp.o
-
-src/HttpResponse.i: src/HttpResponse.cpp.i
-
-.PHONY : src/HttpResponse.i
-
-# target to preprocess a source file
-src/HttpResponse.cpp.i:
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/HttpResponse.cpp.i
-.PHONY : src/HttpResponse.cpp.i
-
-src/HttpResponse.s: src/HttpResponse.cpp.s
-
-.PHONY : src/HttpResponse.s
-
-# target to generate assembly for a file
-src/HttpResponse.cpp.s:
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/HttpResponse.cpp.s
-.PHONY : src/HttpResponse.cpp.s
-
 src/MethodFactory.o: src/MethodFactory.cpp.o
 
 .PHONY : src/MethodFactory.o
@@ -366,33 +339,6 @@ src/NetworkEntity.cpp.s:
 	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.s
 .PHONY : src/NetworkEntity.cpp.s
 
-src/SendMessageException.o: src/SendMessageException.cpp.o
-
-.PHONY : src/SendMessageException.o
-
-# target to build an object file
-src/SendMessageException.cpp.o:
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o
-.PHONY : src/SendMessageException.cpp.o
-
-src/SendMessageException.i: src/SendMessageException.cpp.i
-
-.PHONY : src/SendMessageException.i
-
-# target to preprocess a source file
-src/SendMessageException.cpp.i:
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/SendMessageException.cpp.i
-.PHONY : src/SendMessageException.cpp.i
-
-src/SendMessageException.s: src/SendMessageException.cpp.s
-
-.PHONY : src/SendMessageException.s
-
-# target to generate assembly for a file
-src/SendMessageException.cpp.s:
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/SendMessageException.cpp.s
-.PHONY : src/SendMessageException.cpp.s
-
 src/Server.o: src/Server.cpp.o
 
 .PHONY : src/Server.o
@@ -465,9 +411,6 @@ help:
 	@echo "... src/HttpRequest.o"
 	@echo "... src/HttpRequest.i"
 	@echo "... src/HttpRequest.s"
-	@echo "... src/HttpResponse.o"
-	@echo "... src/HttpResponse.i"
-	@echo "... src/HttpResponse.s"
 	@echo "... src/MethodFactory.o"
 	@echo "... src/MethodFactory.i"
 	@echo "... src/MethodFactory.s"
@@ -483,9 +426,6 @@ help:
 	@echo "... src/NetworkEntity.o"
 	@echo "... src/NetworkEntity.i"
 	@echo "... src/NetworkEntity.s"
-	@echo "... src/SendMessageException.o"
-	@echo "... src/SendMessageException.i"
-	@echo "... src/SendMessageException.s"
 	@echo "... src/Server.o"
 	@echo "... src/Server.i"
 	@echo "... src/Server.s"

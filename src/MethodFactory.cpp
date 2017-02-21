@@ -11,6 +11,6 @@ MethodInterface* MethodFactory::getMethod(string meth){
 		return new MethodPOST;
 	}
 	else{
-		throw runtime_error(string("Not defined"));
+		return nullptr;
 	}
 }

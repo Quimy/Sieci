@@ -1,3 +1,6 @@
+Http 1.0 Server 
+RFC: https://tools.ietf.org/html/rfc1945
+
 Kompilacja serwera:
 1. W folderze /build wydaj komendę 'cmake ..'.
 2. Then 'make'.

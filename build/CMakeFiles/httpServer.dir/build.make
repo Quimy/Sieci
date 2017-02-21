@@ -129,33 +129,9 @@ CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o.provides: CMakeFiles/httpServer.
 CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o.provides.build: CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o
 
 
-CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o: CMakeFiles/httpServer.dir/flags.make
-CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o: ../src/HttpResponse.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o -c /root/Documents/SerwerHTTP/src/HttpResponse.cpp
-
-CMakeFiles/httpServer.dir/src/HttpResponse.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpServer.dir/src/HttpResponse.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Documents/SerwerHTTP/src/HttpResponse.cpp > CMakeFiles/httpServer.dir/src/HttpResponse.cpp.i
-
-CMakeFiles/httpServer.dir/src/HttpResponse.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpServer.dir/src/HttpResponse.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Documents/SerwerHTTP/src/HttpResponse.cpp -o CMakeFiles/httpServer.dir/src/HttpResponse.cpp.s
-
-CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o.requires:
-
-.PHONY : CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o.requires
-
-CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o.provides: CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o.requires
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o.provides.build
-.PHONY : CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o.provides
-
-CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o.provides.build: CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o
-
-
 CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o: CMakeFiles/httpServer.dir/flags.make
 CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o: ../src/MethodFactory.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o -c /root/Documents/SerwerHTTP/src/MethodFactory.cpp
 
 CMakeFiles/httpServer.dir/src/MethodFactory.cpp.i: cmake_force
@@ -179,7 +155,7 @@ CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o.provides.build: CMakeFiles/htt
 
 CMakeFiles/httpServer.dir/src/MethodGET.cpp.o: CMakeFiles/httpServer.dir/flags.make
 CMakeFiles/httpServer.dir/src/MethodGET.cpp.o: ../src/MethodGET.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/httpServer.dir/src/MethodGET.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/httpServer.dir/src/MethodGET.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpServer.dir/src/MethodGET.cpp.o -c /root/Documents/SerwerHTTP/src/MethodGET.cpp
 
 CMakeFiles/httpServer.dir/src/MethodGET.cpp.i: cmake_force
@@ -203,7 +179,7 @@ CMakeFiles/httpServer.dir/src/MethodGET.cpp.o.provides.build: CMakeFiles/httpSer
 
 CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.o: CMakeFiles/httpServer.dir/flags.make
 CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.o: ../src/MethodHEAD.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.o -c /root/Documents/SerwerHTTP/src/MethodHEAD.cpp
 
 CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.i: cmake_force
@@ -227,7 +203,7 @@ CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.o.provides.build: CMakeFiles/httpSe
 
 CMakeFiles/httpServer.dir/src/MethodPOST.cpp.o: CMakeFiles/httpServer.dir/flags.make
 CMakeFiles/httpServer.dir/src/MethodPOST.cpp.o: ../src/MethodPOST.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/httpServer.dir/src/MethodPOST.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/httpServer.dir/src/MethodPOST.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpServer.dir/src/MethodPOST.cpp.o -c /root/Documents/SerwerHTTP/src/MethodPOST.cpp
 
 CMakeFiles/httpServer.dir/src/MethodPOST.cpp.i: cmake_force
@@ -251,7 +227,7 @@ CMakeFiles/httpServer.dir/src/MethodPOST.cpp.o.provides.build: CMakeFiles/httpSe
 
 CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o: CMakeFiles/httpServer.dir/flags.make
 CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o: ../src/NetworkEntity.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o -c /root/Documents/SerwerHTTP/src/NetworkEntity.cpp
 
 CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.i: cmake_force
@@ -273,33 +249,9 @@ CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o.provides: CMakeFiles/httpServe
 CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o.provides.build: CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o
 
 
-CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o: CMakeFiles/httpServer.dir/flags.make
-CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o: ../src/SendMessageException.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o -c /root/Documents/SerwerHTTP/src/SendMessageException.cpp
-
-CMakeFiles/httpServer.dir/src/SendMessageException.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpServer.dir/src/SendMessageException.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/Documents/SerwerHTTP/src/SendMessageException.cpp > CMakeFiles/httpServer.dir/src/SendMessageException.cpp.i
-
-CMakeFiles/httpServer.dir/src/SendMessageException.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpServer.dir/src/SendMessageException.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/Documents/SerwerHTTP/src/SendMessageException.cpp -o CMakeFiles/httpServer.dir/src/SendMessageException.cpp.s
-
-CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o.requires:
-
-.PHONY : CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o.requires
-
-CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o.provides: CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o.requires
-	$(MAKE) -f CMakeFiles/httpServer.dir/build.make CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o.provides.build
-.PHONY : CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o.provides
-
-CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o.provides.build: CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o
-
-
 CMakeFiles/httpServer.dir/src/Server.cpp.o: CMakeFiles/httpServer.dir/flags.make
 CMakeFiles/httpServer.dir/src/Server.cpp.o: ../src/Server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/httpServer.dir/src/Server.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/httpServer.dir/src/Server.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpServer.dir/src/Server.cpp.o -c /root/Documents/SerwerHTTP/src/Server.cpp
 
 CMakeFiles/httpServer.dir/src/Server.cpp.i: cmake_force
@@ -323,7 +275,7 @@ CMakeFiles/httpServer.dir/src/Server.cpp.o.provides.build: CMakeFiles/httpServer
 
 CMakeFiles/httpServer.dir/src/main.cpp.o: CMakeFiles/httpServer.dir/flags.make
 CMakeFiles/httpServer.dir/src/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/httpServer.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/httpServer.dir/src/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpServer.dir/src/main.cpp.o -c /root/Documents/SerwerHTTP/src/main.cpp
 
 CMakeFiles/httpServer.dir/src/main.cpp.i: cmake_force
@@ -350,13 +302,11 @@ httpServer_OBJECTS = \
 "CMakeFiles/httpServer.dir/src/Client.cpp.o" \
 "CMakeFiles/httpServer.dir/src/HeaderInterpreters.cpp.o" \
 "CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o" \
-"CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o" \
 "CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o" \
 "CMakeFiles/httpServer.dir/src/MethodGET.cpp.o" \
 "CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.o" \
 "CMakeFiles/httpServer.dir/src/MethodPOST.cpp.o" \
 "CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o" \
-"CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o" \
 "CMakeFiles/httpServer.dir/src/Server.cpp.o" \
 "CMakeFiles/httpServer.dir/src/main.cpp.o"
 
@@ -366,18 +316,16 @@ httpServer_EXTERNAL_OBJECTS =
 httpServer: CMakeFiles/httpServer.dir/src/Client.cpp.o
 httpServer: CMakeFiles/httpServer.dir/src/HeaderInterpreters.cpp.o
 httpServer: CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o
-httpServer: CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o
 httpServer: CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o
 httpServer: CMakeFiles/httpServer.dir/src/MethodGET.cpp.o
 httpServer: CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.o
 httpServer: CMakeFiles/httpServer.dir/src/MethodPOST.cpp.o
 httpServer: CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o
-httpServer: CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o
 httpServer: CMakeFiles/httpServer.dir/src/Server.cpp.o
 httpServer: CMakeFiles/httpServer.dir/src/main.cpp.o
 httpServer: CMakeFiles/httpServer.dir/build.make
 httpServer: CMakeFiles/httpServer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable httpServer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/Documents/SerwerHTTP/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable httpServer"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/httpServer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -388,13 +336,11 @@ CMakeFiles/httpServer.dir/build: httpServer
 CMakeFiles/httpServer.dir/requires: CMakeFiles/httpServer.dir/src/Client.cpp.o.requires
 CMakeFiles/httpServer.dir/requires: CMakeFiles/httpServer.dir/src/HeaderInterpreters.cpp.o.requires
 CMakeFiles/httpServer.dir/requires: CMakeFiles/httpServer.dir/src/HttpRequest.cpp.o.requires
-CMakeFiles/httpServer.dir/requires: CMakeFiles/httpServer.dir/src/HttpResponse.cpp.o.requires
 CMakeFiles/httpServer.dir/requires: CMakeFiles/httpServer.dir/src/MethodFactory.cpp.o.requires
 CMakeFiles/httpServer.dir/requires: CMakeFiles/httpServer.dir/src/MethodGET.cpp.o.requires
 CMakeFiles/httpServer.dir/requires: CMakeFiles/httpServer.dir/src/MethodHEAD.cpp.o.requires
 CMakeFiles/httpServer.dir/requires: CMakeFiles/httpServer.dir/src/MethodPOST.cpp.o.requires
 CMakeFiles/httpServer.dir/requires: CMakeFiles/httpServer.dir/src/NetworkEntity.cpp.o.requires
-CMakeFiles/httpServer.dir/requires: CMakeFiles/httpServer.dir/src/SendMessageException.cpp.o.requires
 CMakeFiles/httpServer.dir/requires: CMakeFiles/httpServer.dir/src/Server.cpp.o.requires
 CMakeFiles/httpServer.dir/requires: CMakeFiles/httpServer.dir/src/main.cpp.o.requires
 

@@ -8,8 +8,6 @@
 
 #include <sys/stat.h> //mode_t
 
-#include "SendMessageException.h"
-
 using namespace std;
 
 

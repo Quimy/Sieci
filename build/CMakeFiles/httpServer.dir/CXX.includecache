@@ -49,8 +49,6 @@ sstream
 -
 sys/stat.h
 -
-SendMessageException.h
-/root/Documents/SerwerHTTP/include/SendMessageException.h
 
 /root/Documents/SerwerHTTP/include/HttpRequest.h
 string
@@ -59,16 +57,12 @@ stdexcept
 -
 iostream
 -
-Constants.h
-/root/Documents/SerwerHTTP/include/Constants.h
 vector
 -
 map
 -
 string.h
 -
-HttpResponse.h
-/root/Documents/SerwerHTTP/include/HttpResponse.h
 stdio.h
 -
 stdlib.h
@@ -85,22 +79,12 @@ iomanip
 -
 sys/stat.h
 -
-iomanip
--
-ctime
--
 MethodFactory.h
 /root/Documents/SerwerHTTP/include/MethodFactory.h
 HeaderInterpreters.h
 /root/Documents/SerwerHTTP/include/HeaderInterpreters.h
-SendMessageException.h
-/root/Documents/SerwerHTTP/include/SendMessageException.h
-
-/root/Documents/SerwerHTTP/include/HttpResponse.h
-sstream
--
-string
--
+Constants.h
+/root/Documents/SerwerHTTP/include/Constants.h
 
 /root/Documents/SerwerHTTP/include/MethodFactory.h
 MethodGET.h
@@ -182,10 +166,6 @@ string.h
 string
 -
 
-/root/Documents/SerwerHTTP/include/SendMessageException.h
-exception
--
-
 /root/Documents/SerwerHTTP/include/Server.h
 NetworkEntity.h
 /root/Documents/SerwerHTTP/include/NetworkEntity.h
@@ -201,10 +181,6 @@ Client.h
 /root/Documents/SerwerHTTP/src/HttpRequest.cpp
 ../include/HttpRequest.h
 /root/Documents/SerwerHTTP/include/HttpRequest.h
-
-/root/Documents/SerwerHTTP/src/HttpResponse.cpp
-../include/HttpResponse.h
-/root/Documents/SerwerHTTP/include/HttpResponse.h
 
 /root/Documents/SerwerHTTP/src/MethodFactory.cpp
 ../include/MethodFactory.h
@@ -225,8 +201,6 @@ Client.h
 /root/Documents/SerwerHTTP/src/NetworkEntity.cpp
 ../include/NetworkEntity.h
 /root/Documents/SerwerHTTP/include/NetworkEntity.h
-
-/root/Documents/SerwerHTTP/src/SendMessageException.cpp
 
 /root/Documents/SerwerHTTP/src/Server.cpp
 ../include/Server.h

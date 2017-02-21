@@ -2,11 +2,11 @@
 #include <string>
 #include <stdexcept>
 #include <iostream>
-#include "Constants.h"
+
 #include <vector>
 #include <map>
 #include <string.h>
-#include "HttpResponse.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -17,12 +17,11 @@
 #include <iomanip>
 #include <sys/stat.h> //mode_t
 
-#include <iomanip>
-#include <ctime>
 
 #include "MethodFactory.h"
 #include "HeaderInterpreters.h"
-#include "SendMessageException.h"
+#include "Constants.h"
+
 using namespace std;
 
 vector<string> split(string text,string separator);
