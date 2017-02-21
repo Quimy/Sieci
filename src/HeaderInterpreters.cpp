@@ -1,7 +1,6 @@
 #include "../include/HeaderInterpreters.h"
 
 string modifiedSinceHeader(const time_t mTime,const string header){
-		cout<<"Interpretacja nagłówka "<<header<<endl;
 
 		std::istringstream date_s(header);
 		struct tm date_c = {};
@@ -9,11 +8,9 @@ string modifiedSinceHeader(const time_t mTime,const string header){
 		time_t seconds = std::mktime( & date_c );
 		if (date_s.fail()) {
         	std::cout << "Parse failed\n";
-    	} else {
-        	std::cout << std::put_time(&date_c, "%c") << '\n';
+        	return "";
     	}
 
-    	cout<< seconds <<"|"<<mTime<<endl;
     	if(mTime <= seconds)
     		return "304 Not Modified";
     	else

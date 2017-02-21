@@ -17,7 +17,6 @@ extern const int REQUEST_BUFFER_SIZE;
 void processClientRequests(int clientSocket){
 	try{
 
-		cout<<"Enter thread"<<endl;
 	    char bufor[REQUEST_BUFFER_SIZE];
 	    memset(&bufor, 0, REQUEST_BUFFER_SIZE);
 
@@ -26,7 +25,7 @@ void processClientRequests(int clientSocket){
 		HttpRequest req = HttpRequest(string{bufor});
 
 		string response = req.getResponseMessage();
-		cout<<response <<endl;
+
 		write(clientSocket,&response[0], response.size());
 
 	}
@@ -34,7 +33,6 @@ void processClientRequests(int clientSocket){
 		string response{"HTTP/1.0 400 Bad Request\r\n\r\n"};
 		write(clientSocket,&response[0], response.size());	
 	} 
-	cout<<"End of thread"<<endl;
 	close(clientSocket);
 }
 int main(int argc, char* argv[])

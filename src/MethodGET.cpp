@@ -7,7 +7,6 @@ string MethodGET::getResponse(string url,bool isDir){
 	if(isDir){
 		DIR *dpdf;
 		struct dirent *epdf;
-		cout<<filePath.c_str()<<endl;
 		string result = "Lista plikow w katalogu:\r\n";
 		dpdf = opendir(filePath.c_str());
 		if (dpdf != NULL){
@@ -28,7 +27,6 @@ string MethodGET::getResponse(string url,bool isDir){
 		std::stringstream buffer;
 		buffer << t.rdbuf();
 		string a =buffer.str();
-		cout<<a<<endl;
 		return a;
 	}
 }

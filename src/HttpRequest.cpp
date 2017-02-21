@@ -28,7 +28,6 @@ HttpRequest::HttpRequest(string req){
 		throw runtime_error(string("Request wrong format."));
 
 	vector<string> splitted_msg = split(message_head_and_body[0],"\r\n");
-	cout<<"Number of rows: "<<splitted_msg.size()<<endl;
 	if(splitted_msg.size() < 1)
 		throw runtime_error(string("Request wrong format."));
 
@@ -36,9 +35,6 @@ HttpRequest::HttpRequest(string req){
 
 	parseRemainingLines(vector<string>(splitted_msg.begin()+1,splitted_msg.end()));
 
-	for(auto x: extraHeaders){
-		cout<<x.first<<"=>"<<x.second<<endl;
-	}
 	int is_body=isBody();
 	if(is_body>0 && message_head_and_body.size() == 2){
 		body = message_head_and_body[1];
