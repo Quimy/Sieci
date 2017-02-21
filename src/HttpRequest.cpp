@@ -22,7 +22,7 @@ vector<string> split(string text,string separator){
 }
 
 HttpRequest::HttpRequest(string req){
-	error = 0;
+
 	vector<string> message_head_and_body = split(req,"\r\n\r\n");
 	if(message_head_and_body.size() < 1 || message_head_and_body.size() > 2)
 		throw runtime_error(string("Request wrong format."));
@@ -138,7 +138,8 @@ string HttpRequest::getResponseMessage(){
 			status_line = "200 OK";
 			MethodInterface *method = MethodFactory().getMethod(methodName);
 			body_ret = method->getResponse(uri,S_ISDIR(fileStats.st_mode));
-			headers+= "Content-Length: "+std::to_string(body_ret.size())+"\r\n";
+			if(methodName!="HEAD")
+				headers+= "Content-Length: "+std::to_string(body_ret.size())+"\r\n";
 		}		
 	}
 	headers += generateHeaders();

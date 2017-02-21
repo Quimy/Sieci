@@ -31,7 +31,8 @@ void processClientRequests(int clientSocket){
 
 	}
 	catch(exception &e){
-		cout<<e.what()<<endl;		
+		string response{"HTTP/1.0 400 Bad Request\r\n\r\n"};
+		write(clientSocket,&response[0], response.size());	
 	} 
 	cout<<"End of thread"<<endl;
 	close(clientSocket);

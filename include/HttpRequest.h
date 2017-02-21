@@ -36,7 +36,6 @@ class HttpRequest{
 	map<string,string> extraHeaders;
 	struct stat fileStats;
 	string body;
-	bool error;
 
 	void parseFirstLine(string&);
 	void parseSecondLine(string&);

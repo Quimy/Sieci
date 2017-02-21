@@ -127,6 +127,8 @@ iostream
 -
 sys/stat.h
 -
+dirent.h
+-
 Constants.h
 /root/Documents/SerwerHTTP/include/Constants.h
 

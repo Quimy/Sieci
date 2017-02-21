@@ -8,6 +8,7 @@
 #include <iostream>
 
 #include <sys/stat.h> //mode_t
+#include <dirent.h>
 
 #include "Constants.h"
 
