@@ -1,3 +1,0 @@
-/root/Documents/SerwerHTTP/build/CMakeFiles/rebuild_cache.dir
-/root/Documents/SerwerHTTP/build/CMakeFiles/edit_cache.dir
-/root/Documents/SerwerHTTP/build/CMakeFiles/httpServer.dir
